@@ -18,19 +18,12 @@ const UseCategories = () => {
     useEffect(() => {
         setLoading(true);
         const url =
-            selectedCategory === "all"
-                ? "https://dummyjson.com/products"
-                : `https://dummyjson.com/products/category/${selectedCategory}`;
-
+            selectedCategory === "all" ? "https://dummyjson.com/products" : `https://dummyjson.com/products/category/${selectedCategory}`;
         fetch(url)
             .then((res) => res.json())
-            .then((data) => {
-                setProducts(data.products);
-            })
+            .then((data) => {setProducts(data.products);   })
             .catch((error) => console.error("Error fetching products:", error))
-            .finally(() => setLoading(false));
-    }, [selectedCategory]);
-    
+            .finally(() => setLoading(false)); }, [selectedCategory]);    
     return { loading,products,selectedCategory,setSelectedCategory,categories }
 }
  
