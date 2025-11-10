@@ -1,0 +1,105 @@
+.sidebar {
+  width: 220px;
+  background-color: #1e1e2f;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  transition: all 0.3s;
+}
+
+.sidebar-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+  background-color: #5757a1;
+}
+
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 20px;                
+  padding: 20px;
+}
+
+
+.card {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.product-price{
+  font-size: large;
+  font: bold;
+}
+.card-img-top {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-text,
+.card-price,
+.card-rating {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.tsearch-box {
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: blue !important;
+}
+
+.category-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid #0d6efd; 
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.category-btn.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
